@@ -1,0 +1,12 @@
+{
+  "name": "Me lo tiro",
+  "version": "1.0",
+  "description": "Cambia el 'me gusta' en facebook por '¡Me lo tiro!'",
+  "icons": { "48": "icon.png" },
+  "content_scripts": [
+    {
+      "matches": ["http://www.facebook.com/*"],
+      "js": ["jquery.js","main.js"]
+    }
+  ]
+}
