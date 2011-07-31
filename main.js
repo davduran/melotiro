@@ -16,6 +16,7 @@
 		{
 			return oldhtml.
 				replace('A ', '').
+				replace('y a ti', 'y tú').
 				replace('le gusta', 'se tira').
 				replace('les gusta', 'se tiran').
 				replace('le gusta', 'se tira').
