@@ -1,5 +1,5 @@
 (function melotiro(){
-	$('.like_link, .cmnt_like_link').parent().html(
+	$('.like_link, .cmnt_like_link, .uiButtonText').parent().html(
 		function(index, oldhtml)
 		{
 			return oldhtml.
@@ -11,10 +11,11 @@
 				replace('les gusta', 'se tiran');
 		}
 	);
-	$('.uiUfiLike div div').parent().html(
+	$('.uiUfiLike div div, .fbEmuContext').parent().html(
 		function(index, oldhtml)
 		{
 			return oldhtml.
+				replace('A ti,', 'Tú,').
 				replace('A ', '').
 				replace('y a ti', 'y tú').
 				replace('le gusta', 'se tira').
